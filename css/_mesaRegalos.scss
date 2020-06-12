@@ -1,0 +1,20 @@
+.secc-mesa-de-regalos{
+    // margin-bottom: 400px;
+    .cont-secc{
+        // &.cont-seccion-mesa-de-regalos{
+        //     top:45% !important;
+        // }
+       .cont-img-liverpool{
+           min-height: 195px;
+           background:url('../img/liverpool-logo.png');
+           background-size: cover;
+           background-position: center center;
+       }
+       .cont-img-palacio{
+           min-height: 195px;
+           background:url('../img/palacio-logo.png');
+           background-size: cover;
+           background-position: center center;
+       }
+    }
+}

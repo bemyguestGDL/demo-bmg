@@ -1,0 +1,29 @@
+#cuenta {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 15px 10px 40px 10px;
+    grid-gap: 2px;
+    .simply-section {
+        display:grid;
+        justify-content:center;
+        .simply-amount {
+            display:block;
+            font-size: 23px;
+            text-align: center;
+            width:75px;
+            height: 75px;
+            border-radius: 70px;
+            border: solid 1.5px #e6e6e6;
+            line-height: 75px;
+            margin-bottom:20px;
+        }
+        .simply-word {
+            font-family: 'Josefin Sans', sans-serif;
+            color: rgb(154, 160, 166);
+            font-size: 10px;
+            letter-spacing: 2px;
+            text-align: center;
+            display:block;
+        }
+    }
+}

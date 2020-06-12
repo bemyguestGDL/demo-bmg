@@ -1,0 +1,30 @@
+.secc-hospedaje{
+    .cont-secc{
+        display:grid;
+        justify-content:center;
+        grid-gap:20px;
+       .cont-img-hotel{
+           min-height: 85px;
+           width:287px;
+           background-size: cover;
+           background-position: center center;
+           background-repeat: no-repeat !important;
+           &.cont-img-hotel-1{
+               background:url('../img/hotel-1.png');
+           }
+           &.cont-img-hotel-2{
+               background:url('../img/hotel-2.png');
+           }
+       }
+       .cont-text-hotel{
+           p{
+               text-align: center;
+               font-size:17px;
+               a{
+                   color:blue;
+                   text-decoration: underline;
+               }
+           }
+       }
+    }
+}

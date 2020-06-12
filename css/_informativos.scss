@@ -1,0 +1,12 @@
+.informativos{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    grid-gap:70px;
+    padding:0 20px;  
+    justify-content:center;
+    .cont-img{
+        img{
+            cursor:pointer;
+        }
+    }
+}

@@ -1,0 +1,465 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+
+a:focus {
+  outline: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+p {
+  line-height: 25px;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.oculto {
+  display: none;
+}
+
+input[type="checkbox"] {
+  margin-right: 3px;
+}
+
+header .cont-fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(39, 41, 47, 0.9);
+}
+
+header .cont-fixed nav {
+  width: inline-block;
+  display: table;
+  margin: auto;
+  width: 306px;
+  position: relative;
+  top: 80px;
+}
+
+header .cont-fixed nav ul li i {
+  padding: 0 10px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header .cont-fixed nav ul li a {
+  font-family: 'Tenor Sans', sans-serif;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.4);
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  letter-spacing: 1px;
+}
+
+header .cont-fixed nav ul li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.principal {
+  position: relative;
+}
+
+.principal .nav-icono {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 30px;
+}
+
+.principal .nav-icono i {
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#cuenta {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 15px 10px 40px 10px;
+  grid-gap: 2px;
+}
+
+#cuenta .simply-section {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#cuenta .simply-section .simply-amount {
+  display: block;
+  font-size: 23px;
+  text-align: center;
+  width: 75px;
+  height: 75px;
+  border-radius: 70px;
+  border: solid 1.5px #e6e6e6;
+  line-height: 75px;
+  margin-bottom: 20px;
+}
+
+#cuenta .simply-section .simply-word {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #9aa0a6;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-align: center;
+  display: block;
+}
+
+.informativos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px;
+  padding: 0 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.informativos .cont-img img {
+  cursor: pointer;
+}
+
+.cont-secciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(332px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(332px, 1fr));
+  grid-gap: 20px;
+  margin: 70px 0;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+.cont-secciones .secc img {
+  min-height: 550px;
+  max-height: 550px;
+}
+
+.cont-secciones .secc .cont-secc {
+  background: #fff;
+  padding: 20px;
+}
+
+.cont-secciones .secc .cont-secc h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 30px;
+}
+
+.cont-secciones .secc .cont-secc p {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
+.secc-ubicacion .cont-ubicacion iframe {
+  -webkit-box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  min-height: 370px;
+  width: 100%;
+}
+
+.secc-mesa-de-regalos .cont-secc .cont-img-liverpool {
+  min-height: 195px;
+  background: url("../img/liverpool-logo.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.secc-mesa-de-regalos .cont-secc .cont-img-palacio {
+  min-height: 195px;
+  background: url("../img/palacio-logo.png");
+  background-size: cover;
+  background-position: center center;
+}
+
+.secc-hospedaje .cont-secc {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 20px;
+}
+
+.secc-hospedaje .cont-secc .cont-img-hotel {
+  min-height: 85px;
+  width: 287px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat !important;
+}
+
+.secc-hospedaje .cont-secc .cont-img-hotel.cont-img-hotel-1 {
+  background: url("../img/hotel-1.png");
+}
+
+.secc-hospedaje .cont-secc .cont-img-hotel.cont-img-hotel-2 {
+  background: url("../img/hotel-2.png");
+}
+
+.secc-hospedaje .cont-secc .cont-text-hotel p {
+  text-align: center;
+  font-size: 17px;
+}
+
+.secc-hospedaje .cont-secc .cont-text-hotel p a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical {
+  padding: 5px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical::-webkit-scrollbar {
+  display: none;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item {
+  margin-right: 10px;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 300px;
+  max-height: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: end;
+      align-content: end;
+  position: relative;
+  background-size: contain;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item h3, .secc-recomendaciones .cont-secc .des-vertical .vertical-item p {
+  text-align: center;
+  padding: 10px;
+  color: #fff;
+  z-index: 1000;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
+  background: linear-gradient(to bottom, transparent, #000);
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item.comida-1 {
+  background: url("../img/comida-1.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item.comida-2 {
+  background: url("../img/comida-2.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item.salon-1 {
+  background: url("../img/salon-1.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+.secc-recomendaciones .cont-secc .des-vertical .vertical-item.salon-2 {
+  background: url("../img/salon-2.jpg");
+  background-size: cover;
+  background-position-x: -50px;
+}
+
+.secc-rsvp {
+  height: 800px;
+  position: relative;
+}
+
+.secc-rsvp .cont-contenido-rsvp {
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 40px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-1 {
+  color: #fff;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-1 h2 {
+  font-size: 60px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-1 p {
+  font-family: 'Tenor Sans', sans-serif;
+  font-size: 18px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-2 input {
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  margin-bottom: 5px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-2 input.margin-none {
+  margin-bottom: 0;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-3 p, .secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-3 label {
+  color: #fff;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-3 .p-margin-top {
+  margin-top: 20px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-3 label {
+  margin-right: 5px;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-4 {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-4 button {
+  padding: 15px 20px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  background: #fff;
+  letter-spacing: 1;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 776px) {
+  header .cont-fixed nav {
+    top: 30px;
+  }
+  .informativos {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .cont-secciones {
+    grid-gap: 20px;
+    margin: 70px 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .cont-secciones .secc {
+    position: relative;
+  }
+  .cont-secciones .secc.secc-ubicacion {
+    margin-bottom: 400px;
+  }
+  .cont-secciones .secc.secc-ubicacion .cont-ubicacion iframe {
+    width: 90%;
+    position: relative;
+    left: 5%;
+  }
+  .cont-secciones .secc.secc-mesa-de-regalos {
+    margin-bottom: 450px;
+  }
+  .cont-secciones .secc.secc-hospedaje {
+    margin-bottom: 380px;
+  }
+  .cont-secciones .secc.secc-recomendaciones {
+    margin-bottom: 280px;
+  }
+  .cont-secciones .secc .cont-secc {
+    position: absolute;
+    top: 50%;
+    border-radius: 50% 50% 0 0;
+    width: 105%;
+    left: -2.5%;
+  }
+  .cont-secciones .secc .cont-secc .h2-recomendaciones {
+    font-size: 20px !important;
+  }
+  .cont-secciones .secc .cont-secc h2 {
+    padding: 100px 60px 70px 60px;
+    margin-bottom: 20px;
+  }
+  .secc-rsvp {
+    height: 800px;
+  }
+  .secc-rsvp .cont-contenido-rsvp form {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 332px) {
+  .principal {
+    height: 45vh;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
