@@ -40,10 +40,6 @@ img {
   display: none;
 }
 
-input[type="checkbox"] {
-  margin-right: 3px;
-}
-
 header .cont-fixed {
   position: fixed;
   width: 100%;
@@ -155,8 +151,25 @@ header .cont-fixed nav ul li a:hover {
           justify-content: center;
 }
 
-.informativos .cont-img img {
+.informativos .informativo-item .cont-img {
+  border-radius: 100%;
+  position: relative;
   cursor: pointer;
+}
+
+.informativos .informativo-item .cont-img:hover .img-respuesta {
+  display: block;
+}
+
+.informativos .informativo-item .cont-img .img-respuesta {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.informativos .informativo-item .cont-img img {
+  border-radius: 100%;
 }
 
 .cont-secciones {
@@ -236,11 +249,14 @@ header .cont-fixed nav ul li a:hover {
 
 .secc-hospedaje .cont-secc .cont-img-hotel.cont-img-hotel-2 {
   background: url("../img/hotel-2.png");
+  margin-top: 10px;
+  background-position-y: 10px;
 }
 
 .secc-hospedaje .cont-secc .cont-text-hotel p {
   text-align: center;
   font-size: 17px;
+  margin-top: 10px;
 }
 
 .secc-hospedaje .cont-secc .cont-text-hotel p a {
@@ -379,6 +395,10 @@ header .cont-fixed nav ul li a:hover {
   margin-right: 5px;
 }
 
+.secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-3 input[type="checkbox"] {
+  margin: 8px 3px 0 0;
+}
+
 .secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-4 {
   display: -ms-grid;
   display: grid;
@@ -413,6 +433,7 @@ header .cont-fixed nav ul li a:hover {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    overflow: hidden;
   }
   .cont-secciones .secc {
     position: relative;
@@ -420,16 +441,11 @@ header .cont-fixed nav ul li a:hover {
   .cont-secciones .secc.secc-ubicacion {
     margin-bottom: 400px;
   }
-  .cont-secciones .secc.secc-ubicacion .cont-ubicacion iframe {
-    width: 90%;
-    position: relative;
-    left: 5%;
-  }
   .cont-secciones .secc.secc-mesa-de-regalos {
     margin-bottom: 450px;
   }
   .cont-secciones .secc.secc-hospedaje {
-    margin-bottom: 380px;
+    margin-bottom: 400px;
   }
   .cont-secciones .secc.secc-recomendaciones {
     margin-bottom: 280px;
@@ -437,9 +453,8 @@ header .cont-fixed nav ul li a:hover {
   .cont-secciones .secc .cont-secc {
     position: absolute;
     top: 50%;
-    border-radius: 50% 50% 0 0;
-    width: 105%;
-    left: -2.5%;
+    border-radius: 200px 200px 0 0;
+    width: 100%;
   }
   .cont-secciones .secc .cont-secc .h2-recomendaciones {
     font-size: 20px !important;
@@ -454,6 +469,9 @@ header .cont-fixed nav ul li a:hover {
   .secc-rsvp .cont-contenido-rsvp form {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-4 button {
+    margin-top: 8px;
   }
 }
 

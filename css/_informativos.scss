@@ -1,12 +1,26 @@
-.informativos{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    grid-gap:70px;
-    padding:0 20px;  
-    justify-content:center;
-    .cont-img{
-        img{
-            cursor:pointer;
+.informativos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px;
+    padding: 0 20px;
+    justify-content: center;
+    .informativo-item {
+        .cont-img {
+            border-radius: 100%;
+            position: relative;
+            cursor: pointer;
+            &:hover .img-respuesta {
+                display: block;
+            }
+            .img-respuesta {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            img {
+                border-radius: 100%;
+            }
         }
     }
 }

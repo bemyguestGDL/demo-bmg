@@ -14,12 +14,15 @@
            }
            &.cont-img-hotel-2{
                background:url('../img/hotel-2.png');
+               margin-top:10px;
+               background-position-y: 10px;
            }
        }
        .cont-text-hotel{
            p{
                text-align: center;
                font-size:17px;
+               margin-top:10px;
                a{
                    color:blue;
                    text-decoration: underline;
