@@ -10,9 +10,6 @@
         grid-template-columns: 1fr;
     }
     .cont-secciones {
-        grid-gap: 20px;
-        margin: 70px 0;
-        align-items: start;
         overflow:hidden;
         .secc {
             position: relative;
@@ -31,10 +28,12 @@
             .cont-secc {
                 position: absolute;
                 top: 50%;
-                border-radius:200px 200px 0 0;
+                left:0;
+                border-radius:300px 300px 0 0;
                 width: 100%;
                 .h2-recomendaciones {
-                    font-size: 20px !important;
+                    font-size: 25px !important;
+                    padding: 100px 0 70px 0;
                 }
                 h2 {
                     padding: 100px 60px 70px 60px;
