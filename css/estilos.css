@@ -451,10 +451,15 @@ header .cont-fixed nav ul li a:hover {
     left: 0;
     border-radius: 300px 300px 0 0;
     width: 100%;
-    padding: 0 10px;
+  }
+  .cont-secciones .secc .cont-secc.cont-secc-recomendaciones {
+    padding-right: 0;
+  }
+  .cont-secciones .secc .cont-secc.cont-secc-ubicacion {
+    padding: 0;
   }
   .cont-secciones .secc .cont-secc .h2-recomendaciones {
-    font-size: 25px !important;
+    font-size: 22px !important;
     padding: 100px 0 70px 0;
   }
   .cont-secciones .secc .cont-secc h2 {
