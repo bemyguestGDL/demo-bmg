@@ -38,7 +38,17 @@ const appShell = [
     'img/icons/icon-152x152.png',
     'img/icons/icon-192x192.png',
     'img/icons/icon-384x384.png',
-    'img/icons/icon-512x512.png'
+    'img/icons/icon-512x512.png',
+    'img/splashscreens/iphone5_splash.png',
+    'img/splashscreens/iphone6_splash.png',
+    'img/splashscreens/iphoneplus_splash.png',
+    'img/splashscreens/iphonex_splash.png',
+    'img/splashscreens/iphonexr_splash.png',
+    'img/splashscreens/iphonexsmax_splash.png',
+    'img/splashscreens/ipad_splash.png',
+    'img/splashscreens/ipadpro1_splash.png',
+    'img/splashscreens/ipadpro3_splash.png',
+    'img/splashscreens/ipadpro2_splash.png'
 ];
 
 const appShellInmutable = [
@@ -74,12 +84,12 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-    const respuesta = caches.match(e.request).then(res=>{
-        if(res) return res;
+    const respuesta = caches.match(e.request).then(res => {
+        if (res) return res;
 
-        return fetch(e.request).then(newRes=>{
-            caches.open(CACHE_DINAMICO).then(cache=>{
-                cache.put(e.request,newRes);
+        return fetch(e.request).then(newRes => {
+            caches.open(CACHE_DINAMICO).then(cache => {
+                cache.put(e.request, newRes);
             });
             return newRes.clone();
         });
