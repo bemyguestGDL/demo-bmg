@@ -30,7 +30,15 @@ const appShell = [
     'img/palacio-logo.png',
     'img/rsvp-foto.png',
     'img/salon-1.jpg',
-    'img/salon-2.jpg'
+    'img/salon-2.jpg',
+    'img/icons/icon-72x72.png',
+    'img/icons/icon-96x96.png',
+    'img/icons/icon-128x128.png',
+    'img/icons/icon-144x144.png',
+    'img/icons/icon-152x152.png',
+    'img/icons/icon-192x192.png',
+    'img/icons/icon-384x384.png',
+    'img/icons/icon-512x512.png'
 ];
 
 const appShellInmutable = [
