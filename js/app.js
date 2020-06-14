@@ -1,3 +1,12 @@
+var url = window.location.href;
+var swLocation = '/demo-bmg/sw.js'
+if(navigator.serviceWorker){
+    if(url.includes('localhost')){
+        swLocation = '/sw.js';
+    }
+    navigator.serviceWorker.register(swLocation);
+}
+
 simplyCountdown('#cuenta', {
     year: 2021, 
     month: 3, 
