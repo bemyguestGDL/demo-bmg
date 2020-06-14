@@ -10,8 +10,8 @@
         grid-template-columns: 1fr;
     }
     .cont-secciones {
-        overflow:hidden;
         .secc {
+            border:none;
             position: relative;
             &.secc-ubicacion {
                 margin-bottom: 400px;
@@ -20,7 +20,7 @@
                 margin-bottom: 450px;
             }
             &.secc-hospedaje {
-                margin-bottom: 400px;
+                margin-bottom: 430px;
             }
             &.secc-recomendaciones {
                 margin-bottom: 280px;
@@ -41,6 +41,16 @@
                 h2 {
                     padding: 100px 30px 70px 30px;
                     margin-bottom: 20px;
+                    &:after{
+                        content:"";
+                        display:block;
+                        position:absolute;
+                        width:15%;
+                        left:42.5%;
+                        bottom:20%;
+                        height: 2px;
+                        background: #404a4a;
+                    }
                 }
             }
         }

@@ -65,7 +65,7 @@ header .cont-fixed nav {
 
 header .cont-fixed nav ul li i {
   padding: 0 10px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   color: #fff;
   font-size: 18px;
   cursor: pointer;
@@ -95,7 +95,7 @@ header .cont-fixed nav ul li a:hover {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 30px;
+  padding: 25px;
 }
 
 .principal .nav-icono i {
@@ -204,6 +204,12 @@ header .cont-fixed nav ul li a:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  overflow: hidden;
+}
+
+.cont-secciones .secc {
+  border: solid 1px #f2f2f2;
+  border-bottom: none;
 }
 
 .cont-secciones .secc img {
@@ -217,7 +223,8 @@ header .cont-fixed nav ul li a:hover {
 }
 
 .cont-secciones .secc .cont-secc h2 {
-  margin-bottom: 20px;
+  position: relative;
+  padding: 20px 20px 40px 20px;
   text-align: center;
   font-size: 30px;
 }
@@ -449,10 +456,8 @@ header .cont-fixed nav ul li a:hover {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .cont-secciones {
-    overflow: hidden;
-  }
   .cont-secciones .secc {
+    border: none;
     position: relative;
   }
   .cont-secciones .secc.secc-ubicacion {
@@ -462,7 +467,7 @@ header .cont-fixed nav ul li a:hover {
     margin-bottom: 450px;
   }
   .cont-secciones .secc.secc-hospedaje {
-    margin-bottom: 400px;
+    margin-bottom: 430px;
   }
   .cont-secciones .secc.secc-recomendaciones {
     margin-bottom: 280px;
@@ -484,6 +489,16 @@ header .cont-fixed nav ul li a:hover {
   .cont-secciones .secc .cont-secc h2 {
     padding: 100px 30px 70px 30px;
     margin-bottom: 20px;
+  }
+  .cont-secciones .secc .cont-secc h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15%;
+    left: 42.5%;
+    bottom: 20%;
+    height: 2px;
+    background: #404a4a;
   }
   .secc-rsvp {
     height: 800px;
