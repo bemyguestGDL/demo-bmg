@@ -38,8 +38,7 @@ const appShell = [
     'img/icons/icon-152x152.png',
     'img/icons/icon-192x192.png',
     'img/icons/icon-384x384.png',
-    'img/icons/icon-512x512.png',
-    '/demo-bmg/manifest.json'
+    'img/icons/icon-512x512.png'
 ];
 
 const appShellInmutable = [
