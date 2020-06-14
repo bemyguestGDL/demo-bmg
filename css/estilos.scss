@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Tenor Sans', sans-serif;
+}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Tenor Sans', sans-serif;
 }
@@ -31,6 +34,7 @@ img{
 }
 @import 'header';
 @import 'principal';
+@import 'invitado';
 @import 'cuenta';
 @import 'informativos';
 @import 'contSecciones';

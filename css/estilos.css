@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Tenor Sans', sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Tenor Sans', sans-serif;
 }
@@ -68,7 +72,6 @@ header .cont-fixed nav ul li i {
 }
 
 header .cont-fixed nav ul li a {
-  font-family: 'Tenor Sans', sans-serif;
   display: inline-block;
   width: 100%;
   color: #fff;
@@ -101,12 +104,30 @@ header .cont-fixed nav ul li a:hover {
   cursor: pointer;
 }
 
+.cont-invitado {
+  padding: 40px 20px;
+}
+
+.cont-invitado .h2-invitado, .cont-invitado p {
+  text-align: center;
+}
+
+.cont-invitado .h2-invitado {
+  font-family: 'Great Vibes', cursive;
+  font-size: 50px;
+  color: #404a4a;
+}
+
+.cont-invitado p {
+  color: #9aa0a6;
+}
+
 #cuenta {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  padding: 40px 10px;
+  padding: 0 10px 40px 10px;
   grid-gap: 2px;
 }
 
@@ -128,6 +149,7 @@ header .cont-fixed nav ul li a:hover {
   border: solid 1.5px #e6e6e6;
   line-height: 75px;
   margin-bottom: 20px;
+  font-family: serif;
 }
 
 #cuenta .simply-section .simply-word {
@@ -197,12 +219,7 @@ header .cont-fixed nav ul li a:hover {
 .cont-secciones .secc .cont-secc h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-family: 'Tenor Sans', sans-serif;
   font-size: 30px;
-}
-
-.cont-secciones .secc .cont-secc p {
-  font-family: 'Tenor Sans', sans-serif;
 }
 
 .secc-ubicacion .cont-ubicacion iframe {
@@ -367,7 +384,6 @@ header .cont-fixed nav ul li a:hover {
 }
 
 .secc-rsvp .cont-contenido-rsvp form .rsvpcolumna-1 p {
-  font-family: 'Tenor Sans', sans-serif;
   font-size: 18px;
 }
 

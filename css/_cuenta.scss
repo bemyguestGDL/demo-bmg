@@ -1,7 +1,7 @@
 #cuenta {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 40px 10px;
+    padding: 0 10px 40px 10px;
     grid-gap: 2px;
     .simply-section {
         display:grid;
@@ -16,6 +16,7 @@
             border: solid 1.5px #e6e6e6;
             line-height: 75px;
             margin-bottom:20px;
+            font-family:serif;
         }
         .simply-word {
             font-family: 'Josefin Sans', sans-serif;
