@@ -165,26 +165,28 @@
     <section id="rsvp" class="secc-rsvp">
         <img src="img/rsvp-foto.png" alt="">
         <div class="cont-contenido-rsvp">
-            <form action="" method="POST">
+            <form action="php/email.php" method="POST">
                 <div class="rsvp-item rsvpcolumna-1">
                     <h2>RSVP</h2>
                     <p>Confirma tu asistencia</p>
                 </div>
                 <div class="rsvp-item rsvpcolumna-2">
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="tel" name="tel" placeholder="Teléfono">
-                    <input type="email" name="email" placeholder="Email" class="margin-none">
+                    <input type="text" name="nombre" placeholder="Nombre" required="required">
+                    <input type="tel" name="tel" placeholder="Teléfono" required="required">
+                    <input type="email" name="email" placeholder="Email" class="margin-none" required="required">
                 </div>
                 <div class="rsvp-item rsvpcolumna-3">
                     <p>¿Qué prefieres?</p>
-                    <label><input type="checkbox" name="vegano">Menú vegano</label>
-                    <label><input type="checkbox" name="normal">Menú normal</label>
+                    <label><input type="checkbox" name="menu[]" value="Menú vegano">Menú vegano</label>
+                    <label><input type="checkbox" name="menu[]" value="Menú normal">Menú normal</label>
                     <p class="p-margin-top">¿Qué tomas?</p>
-                    <label><input type="checkbox" name="tequila">Tequila</label>
-                    <label><input type="checkbox" name="whisky">Whisky</label>
+                    <label><input type="checkbox" name="bebida[]" value="Tequila">Tequila</label>
+                    <label><input type="checkbox" name="bebida[]" value="Whisky">Whisky</label>
                 </div>
                 <div class="rsvp-item rsvpcolumna-4">
-                    <button>CONFIRMAR ASISTENCIA</button>
+                    <div class="btn-form">
+                        <input type="submit" name="btn" value="CONFIRMAR ASISTENCIA">
+                    </div>
                 </div>
             </form>
         </div>
