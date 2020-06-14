@@ -3,7 +3,7 @@ const CACHE_DINAMICO = "dinamico-v1";
 const CACHE_INMUTABLE = "inmutable";
 
 const appShell = [
-    'index.html',
+    '/demo-bmg/index.html',
     'css/estilos.css',
     'js/app.js',
     'img/comida-1.jpg',
