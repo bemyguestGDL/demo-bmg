@@ -32,11 +32,15 @@
                 border-radius:300px 300px 0 0;
                 width: 100%;
                 &.cont-secc-recomendaciones{
-                    padding-right:0;
+                    padding:0;
+                    .des-vertical{
+                        padding:5px 0 5px 20px;
+                    }
                 }
                 .h2-recomendaciones {
                     font-size: 22px !important;
                     padding: 100px 0 70px 0;
+                    border:solid 2px red,
                 }
                 h2 {
                     padding: 100px 30px 70px 30px;

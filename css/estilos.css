@@ -143,11 +143,11 @@ header .cont-fixed nav ul li a:hover {
   display: block;
   font-size: 23px;
   text-align: center;
-  width: 75px;
-  height: 75px;
+  width: 70px;
+  height: 70px;
   border-radius: 70px;
   border: solid 1.5px #e6e6e6;
-  line-height: 75px;
+  line-height: 70px;
   margin-bottom: 20px;
   font-family: serif;
 }
@@ -480,11 +480,15 @@ header .cont-fixed nav ul li a:hover {
     width: 100%;
   }
   .cont-secciones .secc .cont-secc.cont-secc-recomendaciones {
-    padding-right: 0;
+    padding: 0;
+  }
+  .cont-secciones .secc .cont-secc.cont-secc-recomendaciones .des-vertical {
+    padding: 5px 0 5px 20px;
   }
   .cont-secciones .secc .cont-secc .h2-recomendaciones {
     font-size: 22px !important;
     padding: 100px 0 70px 0;
+    border: solid 2px red;
   }
   .cont-secciones .secc .cont-secc h2 {
     padding: 100px 30px 70px 30px;
